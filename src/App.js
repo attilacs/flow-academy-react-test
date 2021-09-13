@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
 import ForintInput from './Components/ForintInput';
+import Rates from './Components/Rates';
 import Values from './Components/Values';
 
 function App() {
@@ -40,6 +41,11 @@ function App() {
       <div className="row">
         <div className="col d-flex justify-content-center">
           <Values forint={forint} exchangeRate={exchangeRate} />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <Rates exchangeRate={exchangeRate} />
         </div>
       </div>
     </div>
