@@ -19,7 +19,6 @@ function App() {
           usd: response.data.rates.USD,
           eur: response.data.rates.EUR
         });
-        console.log(response);
       } catch (err) {
         console.error(err);
       }
