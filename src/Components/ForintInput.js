@@ -9,6 +9,7 @@ const ForintInput = ({ setForint, forint }) => {
           className="form-control"
           type="number"
           name="forint"
+          id="forint"
           value={forint}
           onChange={(e) => setForint(Number(e.target.value))}
         />
