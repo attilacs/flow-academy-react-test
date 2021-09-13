@@ -1,9 +1,11 @@
 const Rates = ({ exchangeRate }) => {
+  const eur = Math.round(1 / exchangeRate.eur);
+  const usd = Math.round(1 / exchangeRate.usd);
   return (
     <div>
       <p>Árfolyam</p>
-      <p>EUR = {Math.round(1 / exchangeRate.eur)} HUF</p>
-      <p>USD = {Math.round(1 / exchangeRate.usd)} HUF</p>
+      <p>EUR = {eur} HUF</p>
+      <p>USD = {usd} HUF</p>
     </div>
   );
 };
