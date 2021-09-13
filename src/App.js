@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App container">
+    <div className="App container p-5">
       <div className="row">
         <h2>Deviza váltás</h2>
         <div className="col"></div>
