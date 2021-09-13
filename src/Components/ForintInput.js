@@ -1,7 +1,4 @@
-import { useState } from 'react';
-
-const ForintInput = () => {
-  const [forint, setForint] = useState(0);
+const ForintInput = ({ setForint, forint }) => {
   return (
     <form>
       <div className="mb-3">
@@ -13,7 +10,7 @@ const ForintInput = () => {
           type="number"
           name="forint"
           value={forint}
-          onChange={(e) => setForint(e.target.value)}
+          onChange={(e) => setForint(Number(e.target.value))}
         />
       </div>
     </form>

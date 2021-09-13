@@ -4,6 +4,7 @@ import './App.css';
 import ForintInput from './Components/ForintInput';
 
 function App() {
+  const [forint, setForint] = useState(0);
   const [exchangeRate, setExchangeRate] = useState({});
   useEffect(() => {
     const fetchExchange = async () => {
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App container">
       <h2>Deviza váltás</h2>
-      <ForintInput />
+      <ForintInput setForint={setForint} forint={forint} />
     </div>
   );
 }
